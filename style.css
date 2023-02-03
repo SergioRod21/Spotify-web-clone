@@ -8,9 +8,78 @@
 * {
     padding: 0;
     margin: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .main__container {
-    background-color: grey;
+    background-color: var(--main--bg-color);
     height: 92vh;
 }
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: inherit;
+    background-color: var(--sidebar--bg-color);
+    width: 12.5%;
+}
+
+.sidebar__bottons {
+    height: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.sidebar__bottons div {
+    display: flex;
+    width: 120%;
+    margin: 1vh;
+}
+
+.sidebar__bottons div p {
+    margin-left: 10%;
+}
+
+
+.spotify__logo {
+    width: 60%;
+    height: auto;
+    padding: 10% 5vh 10px 0px;
+}
+
+.library__container {
+    margin-bottom: 4vh !important;
+}
+
+.liked__container {
+    padding-bottom: 2vh;
+   border-bottom: 3px solid #1E1E1E;
+   border-radius: 5px;
+}
+
+.playlist__main-container {
+    display: flex;
+    justify-content: left;
+    line-height: 3vh;
+    border: 1px solid #ddd;
+     overflow-y: scroll;
+    /*overflow: hidden;*/
+    width: 80%;
+    justify-self: center;
+}
+
+
+.playlists__container {
+    height: auto;
+}
+
+.playlist {
+  display: block;
+  margin: 0px 0px 1vh 0px;
+}
+
